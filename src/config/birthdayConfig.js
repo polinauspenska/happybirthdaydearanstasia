@@ -40,14 +40,8 @@ export const birthdayConfig = {
     // message unfolds. Leave empty to reuse `message` with subtle motion.
     messagePoses: [
       'images/theo-message.webp',
-      'images/theo-pose-09.webp',
       'images/theo-pose-04.webp',
-      'images/theo-pose-10.webp',
-      'images/theo-pose-01.webp',
-      'images/theo-extra-09.webp',
-      'images/theo-pose-07.webp',
-      'images/theo-extra-04.webp',
-      'images/theo-pose-11.webp',
+      'images/theo-pose-09.webp',
     ],
     // Chapter 3 — serious "reviewing the file" look
     dossier: 'images/theo-dossier.webp',
