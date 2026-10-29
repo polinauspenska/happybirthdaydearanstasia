@@ -5,7 +5,7 @@ A five-chapter, scrapbook-style birthday surprise for Anastasia's 26th, from her
 1. **Breaking News** — tabloid front page, confidential stamp, confetti
 2. **A Very Important Message** — Theo's fictional greeting, revealed one tap at a time
 3. **The Official Dossier** — a folder that swings open, findings, an APPROVED stamp
-4. **The Compatibility Assessment** — a quiz you can't lose, a 0→100 meter, endless compliments
+4. **The Fabulousness Assessment** — a quiz you can't lose, a 0→100 meter, endless compliments
 5. **The Grand Finale** — the girls' letter, the birthday kiss and the punchline
 
 > This is a humorous, unofficial fan-made parody. Theo James was not involved, and every quote attributed to him is fictional. The site says so in several places; please keep those lines.

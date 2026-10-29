@@ -178,7 +178,7 @@ export default function CompatibilityQuiz({ config, onNext }) {
               {/* meter */}
               <div className="mt-10 max-w-2xl">
                 <div className="flex items-end justify-between font-anton uppercase">
-                  <span className="text-sm tracking-[0.2em]">Compatibility meter</span>
+                  <span className="text-sm tracking-[0.2em]">Fabulousness meter</span>
                   <span className="text-5xl leading-none text-cherry tabular-nums sm:text-6xl">{score}%</span>
                 </div>
                 <div
@@ -187,7 +187,7 @@ export default function CompatibilityQuiz({ config, onNext }) {
                   aria-valuemin={0}
                   aria-valuemax={100}
                   aria-valuenow={score}
-                  aria-label="Theo compatibility"
+                  aria-label="Fabulousness meter"
                 >
                   <div
                     className="h-full rounded-full bg-cherry"
@@ -197,9 +197,9 @@ export default function CompatibilityQuiz({ config, onNext }) {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-between px-3 font-anton text-[11px] tracking-widest text-ink/40 uppercase mix-blend-multiply">
-                    <span>Strangers</span>
-                    <span>Friends</span>
-                    <span>Soulmates</span>
+                    <span>Fine</span>
+                    <span>Fabulous</span>
+                    <span>Iconic</span>
                   </div>
                 </div>
               </div>
