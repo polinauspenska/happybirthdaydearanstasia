@@ -34,7 +34,10 @@ export default function TheoMessage({ config, onNext }) {
   const finaleRef = useRef(null)
 
   const poses = config.images.messagePoses?.length ? config.images.messagePoses : null
-  const imgSrc = poses ? poses[Math.max(0, step - 1) % poses.length] : config.images.message
+  // Spread the poses evenly across the message so none repeats (with ≥ as many photos as lines, one per line)
+  const imgSrc = poses
+    ? poses[Math.min(poses.length - 1, Math.floor((Math.max(1, step) - 1) * poses.length / lines.length))]
+    : config.images.message
   const pose = POSES[step % POSES.length]
 
   const advance = () => {

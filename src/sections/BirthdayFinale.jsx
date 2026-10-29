@@ -244,7 +244,7 @@ function KissSequence({ config, onClose, onReplay }) {
                 animate={phase >= 1 ? { scale: 1, opacity: 1, rotate: 2 } : {}}
                 transition={{ type: 'spring', stiffness: 160, damping: 13 }}
               >
-                <TheoCutout src={config.images.finale} pose="portrait" eager />
+                <TheoCutout src={config.images.kiss || config.images.finale} pose="portrait" eager />
               </motion.div>
 
               {/* lipstick kisses flying at the screen, then sticking */}

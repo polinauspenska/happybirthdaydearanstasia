@@ -43,25 +43,31 @@ export const birthdayConfig = {
       'images/theo-pose-09.webp',
       'images/theo-pose-04.webp',
       'images/theo-pose-10.webp',
+      'images/theo-pose-01.webp',
+      'images/theo-extra-09.webp',
+      'images/theo-pose-07.webp',
+      'images/theo-extra-04.webp',
       'images/theo-pose-11.webp',
     ],
     // Chapter 3 — serious "reviewing the file" look
     dossier: 'images/theo-dossier.webp',
     // Chapter 4 — flirty / smiling
     quiz: 'images/theo-quiz.webp',
-    // Optional: one image per compliment (cycled). Leave empty to reuse `quiz`.
+    // Optional: one image per compliment, in the same order as quiz.compliments. Leave empty to reuse `quiz`.
     compliments: [
-      'images/theo-quiz.webp',
-      'images/theo-finale.webp',
-      'images/theo-pose-01.webp',
-      'images/theo-pose-07.webp',
-      'images/theo-pose-04.webp',
-      'images/theo-pose-09.webp',
-      'images/theo-pose-10.webp',
-      'images/theo-pose-11.webp',
+      'images/theo-extra-01.webp',
+      'images/theo-extra-02.webp',
+      'images/theo-extra-06.webp',
+      'images/theo-extra-07.webp',
+      'images/theo-extra-08.webp',
+      'images/theo-extra-10.webp',
+      'images/theo-extra-11.webp',
+      'images/theo-extra-05.webp',
     ],
     // Chapter 5 — warm smile, blowing a kiss or holding a flower
     finale: 'images/theo-finale.webp',
+    // The birthday-kiss scene (falls back to `finale` if removed)
+    kiss: 'images/theo-kiss.webp',
     // The birthday girl herself (polaroids in Chapters 3 and 5)
     recipient: 'images/anastasia.webp',
     // Finale collage polaroid
