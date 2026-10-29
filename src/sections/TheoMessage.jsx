@@ -34,9 +34,9 @@ export default function TheoMessage({ config, onNext }) {
   const finaleRef = useRef(null)
 
   const poses = config.images.messagePoses?.length ? config.images.messagePoses : null
-  // Spread the poses evenly across the message so none repeats (with ≥ as many photos as lines, one per line)
+  // A new photo on every line (line N → photo N); if there are fewer photos than lines, the last one stays
   const imgSrc = poses
-    ? poses[Math.min(poses.length - 1, Math.floor((Math.max(1, step) - 1) * poses.length / lines.length))]
+    ? poses[Math.min(poses.length - 1, Math.max(0, step - 1))]
     : config.images.message
   const pose = POSES[step % POSES.length]
 

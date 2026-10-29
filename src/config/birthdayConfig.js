@@ -36,12 +36,19 @@ export const birthdayConfig = {
     hero: 'images/theo-hero.webp',
     // Chapter 2 — romantic / charming portrait
     message: 'images/theo-message.webp',
-    // Optional: extra poses for Chapter 2. The photo changes as the
+    // Optional: extra poses for Chapter 2. The photo changes on every line of the
     // message unfolds. Leave empty to reuse `message` with subtle motion.
     messagePoses: [
-      'images/theo-message.webp',
-      'images/theo-pose-04.webp',
-      'images/theo-pose-09.webp',
+      // One photo per line of the message, in order. None of these appear elsewhere.
+      'images/theo-message.webp', // 1  Hello, gorgeous.
+      'images/theo-pose-01.webp', // 2  turning 26
+      'images/theo-extra-09.webp', // 3  persuasive women
+      'images/theo-pose-09.webp', // 4  beautiful, hilarious
+      'images/theo-pose-07.webp', // 5  card wasn't going to cut it
+      'images/theo-pose-04.webp', // 6  dropped everything
+      'images/theo-pose-11.webp', // 7  too important to ignore
+      'images/theo-pose-10.webp', // 8  gorgeous? undeniably
+      'images/theo-extra-04.webp', // 9+ more iconic … to the end
     ],
     // Chapter 3 — serious "reviewing the file" look
     dossier: 'images/theo-dossier.webp',
