@@ -33,37 +33,37 @@ export const birthdayConfig = {
 
   images: {
     // Chapter 1 — confident, full-body cut-out
-    hero: '/images/theo-hero.webp',
+    hero: 'images/theo-hero.webp',
     // Chapter 2 — romantic / charming portrait
-    message: '/images/theo-message.webp',
+    message: 'images/theo-message.webp',
     // Optional: extra poses for Chapter 2. The photo changes as the
     // message unfolds. Leave empty to reuse `message` with subtle motion.
     messagePoses: [
-      '/images/theo-message.webp',
-      '/images/theo-pose-09.webp',
-      '/images/theo-pose-04.webp',
-      '/images/theo-pose-10.webp',
-      '/images/theo-pose-11.webp',
+      'images/theo-message.webp',
+      'images/theo-pose-09.webp',
+      'images/theo-pose-04.webp',
+      'images/theo-pose-10.webp',
+      'images/theo-pose-11.webp',
     ],
     // Chapter 3 — serious "reviewing the file" look
-    dossier: '/images/theo-dossier.webp',
+    dossier: 'images/theo-dossier.webp',
     // Chapter 4 — flirty / smiling
-    quiz: '/images/theo-quiz.webp',
+    quiz: 'images/theo-quiz.webp',
     // Optional: one image per compliment (cycled). Leave empty to reuse `quiz`.
     compliments: [
-      '/images/theo-quiz.webp',
-      '/images/theo-finale.webp',
-      '/images/theo-pose-01.webp',
-      '/images/theo-pose-07.webp',
-      '/images/theo-pose-04.webp',
-      '/images/theo-pose-09.webp',
-      '/images/theo-pose-10.webp',
-      '/images/theo-pose-11.webp',
+      'images/theo-quiz.webp',
+      'images/theo-finale.webp',
+      'images/theo-pose-01.webp',
+      'images/theo-pose-07.webp',
+      'images/theo-pose-04.webp',
+      'images/theo-pose-09.webp',
+      'images/theo-pose-10.webp',
+      'images/theo-pose-11.webp',
     ],
     // Chapter 5 — warm smile, blowing a kiss or holding a flower
-    finale: '/images/theo-finale.webp',
+    finale: 'images/theo-finale.webp',
     // The birthday girl herself (polaroids in Chapters 3 and 5)
-    recipient: '/images/anastasia.webp',
+    recipient: 'images/anastasia.webp',
   },
 
   // ── CHAPTER 1 ──────────────────────────────────────────────
