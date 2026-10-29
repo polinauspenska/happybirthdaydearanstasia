@@ -251,7 +251,7 @@ export const birthdayConfig = {
   easterEggs: {
     meeting: 'We had a very important meeting about this.',
     hr: 'HR was not consulted.',
-    boyfriend: 'Official birthday boyfriend. Terms and conditions apply.',
+    boyfriend: 'Official birthday guest star. Terms and conditions apply.',
   },
 
   chapterNames: ['Breaking news', 'The message', 'The dossier', 'The assessment', 'The finale'],

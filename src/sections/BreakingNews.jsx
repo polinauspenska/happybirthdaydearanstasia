@@ -201,11 +201,16 @@ export default function BreakingNews({ config, onNext }) {
               <span className="h-[3px] flex-1 bg-ink" />
             </div>
 
-            <div className="relative mt-5 gap-8 font-sans text-[1.05rem] leading-relaxed sm:columns-2">
-              <p className="first-letter:float-left first-letter:mt-1 first-letter:mr-2 first-letter:font-anton first-letter:text-7xl first-letter:leading-[0.8] first-letter:text-cherry">
-                {c.story[0]} {c.story[1]}
+            <div className="relative mt-5 grid gap-x-8 gap-y-3 font-sans text-[1.05rem] leading-relaxed sm:grid-cols-2">
+              <p>
+                {/* Drop cap as a real element: CSS ::first-letter breaks inside multi-column layouts */}
+                <span aria-hidden="true" className="float-left mt-1 mr-2 font-anton text-7xl leading-[0.8] text-cherry">
+                  {c.story[0].charAt(0)}
+                </span>
+                <span className="sr-only">{c.story[0].charAt(0)}</span>
+                {c.story[0].slice(1)} {c.story[1]}
               </p>
-              <p className="mt-3 font-bold">{c.story[2]}</p>
+              <p className="font-bold">{c.story[2]}</p>
 
             </div>
 
