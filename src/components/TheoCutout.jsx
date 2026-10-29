@@ -130,7 +130,7 @@ export function Polaroid({ src, alt, caption, rotate = 0, className = '', childr
       className={`relative m-0 bg-warm p-2.5 pb-11 paper-shadow ${className}`}
       style={{ transform: `rotate(${rotate}deg)` }}
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-blush">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-gradient-to-br from-pink via-blush to-warm">
         {!failed ? (
           <img
             src={src}
@@ -138,7 +138,7 @@ export function Polaroid({ src, alt, caption, rotate = 0, className = '', childr
             loading="lazy"
             decoding="async"
             onError={() => setFailed(true)}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-top"
             draggable={false}
           />
         ) : (

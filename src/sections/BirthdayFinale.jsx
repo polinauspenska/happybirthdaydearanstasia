@@ -61,7 +61,7 @@ export default function BirthdayFinale({ config, onRestart }) {
           <div className="relative order-1 lg:col-span-5">
             <div className="relative mx-auto h-[440px] max-w-[420px] sm:h-[500px]">
               <div className="absolute top-0 left-0 w-[54%]">
-                <Polaroid src={config.images.recipient} alt={`${config.recipient}, the birthday girl`} caption="The birthday girl" rotate={-6} />
+                <Polaroid src={config.images.recipientFinale || config.images.recipient} alt={`${config.recipient}, the birthday girl`} caption="The birthday girl" rotate={-6} />
                 <Tape className="absolute -top-3 left-1/2 -translate-x-1/2 rotate-[3deg]" />
               </div>
               <div className="absolute right-0 bottom-0 z-10 w-[58%]">
@@ -101,6 +101,30 @@ export default function BirthdayFinale({ config, onRestart }) {
             <p className="mt-6 text-right font-hand text-xl text-burgundy rotate-[-1.5deg]">{c.committeeNote}</p>
           </div>
         </div>
+
+        {/* ── Further evidence: polaroid strip ────── */}
+        {config.images.recipientGallery?.length > 0 && (
+          <section aria-label="More photos of the birthday girl" className="relative mt-16">
+            <p className="text-center font-anton text-sm tracking-[0.3em] uppercase">Further evidence</p>
+            <p className="mt-1 text-center font-hand text-2xl text-cherry">Submitted by the birthday committee</p>
+            <div className="mt-8 flex flex-wrap items-start justify-center gap-x-4 gap-y-8 sm:gap-x-8">
+              {config.images.recipientGallery.map(([src, caption], i) => (
+                <motion.div
+                  key={src}
+                  className="relative w-[44%] max-w-[230px] sm:w-[28%]"
+                  initial={{ opacity: 0, y: 40, rotate: 0 }}
+                  whileInView={{ opacity: 1, y: 0, rotate: [-5, 4, -3, 5][i % 4] }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ type: 'spring', stiffness: 180, damping: 16, delay: i * 0.12 }}
+                >
+                  <Tape className="absolute -top-3 left-1/2 z-10 -translate-x-1/2 rotate-[-4deg]" color={i % 2 ? 'rgba(189,163,106,.7)' : undefined} />
+                  <Polaroid src={src} alt={`${config.recipient}: ${caption}`} caption={caption} className="[&_figcaption]:px-2 [&_figcaption]:text-lg [&_figcaption]:leading-[0.9] sm:[&_figcaption]:text-xl" />
+                  {i === 1 && <Heart className="absolute -top-4 -right-3 z-10 w-9 rotate-12" />}
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── Kiss CTA ─────────────────────────────── */}
         <div className="relative mt-16 flex flex-col items-center text-center">

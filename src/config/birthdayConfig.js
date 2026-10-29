@@ -64,6 +64,14 @@ export const birthdayConfig = {
     finale: 'images/theo-finale.webp',
     // The birthday girl herself (polaroids in Chapters 3 and 5)
     recipient: 'images/anastasia.webp',
+    // Finale collage polaroid
+    recipientFinale: 'images/anastasia-finale.webp',
+    // "Further evidence" polaroid strip in the finale (caption + image)
+    recipientGallery: [
+      ['images/anastasia-2.webp', 'Exhibit B: iced coffee era'],
+      ['images/anastasia-3.webp', 'Exhibit C: main character'],
+      ['images/anastasia-4.webp', 'Exhibit D: pink is a personality'],
+    ],
   },
 
   // ── CHAPTER 1 ──────────────────────────────────────────────
