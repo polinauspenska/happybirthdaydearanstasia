@@ -78,9 +78,9 @@ export const birthdayConfig = {
       ['images/anastasia-2.webp', 'Exhibit B: iced coffee era'],
       ['images/anastasia-3.webp', 'Exhibit C: main character'],
       ['images/anastasia-4.webp', 'Exhibit D: pink is a personality'],
-      ['images/anastasia-5.webp', 'Exhibit E: matcha, obviously'],
-      ['images/anastasia-6.webp', 'Exhibit F: the birthday pout'],
-      ['images/anastasia-7.webp', 'Exhibit G: off-duty icon'],
+      ['images/anastasia-5-sticker.webp', 'Exhibit E: matcha, obviously'],
+      ['images/anastasia-6-sticker.webp', 'Exhibit F: the birthday pout'],
+      ['images/anastasia-7-sticker.webp', 'Exhibit G: off-duty icon'],
     ],
   },
 

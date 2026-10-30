@@ -107,11 +107,11 @@ export default function BirthdayFinale({ config, onRestart }) {
           <section aria-label="More photos of the birthday girl" className="relative mt-16">
             <p className="text-center font-anton text-sm tracking-[0.3em] uppercase">Further evidence</p>
             <p className="mt-1 text-center font-hand text-2xl text-cherry">Submitted by the birthday committee</p>
-            <div className="mt-8 flex flex-wrap items-start justify-center gap-x-4 gap-y-8 sm:gap-x-8">
+            <div className="mx-auto mt-8 flex max-w-4xl flex-wrap items-start justify-center gap-x-4 gap-y-8 sm:gap-x-8">
               {config.images.recipientGallery.map(([src, caption], i) => (
                 <motion.div
                   key={src}
-                  className="relative w-[44%] max-w-[230px] sm:w-[28%]"
+                  className="relative w-[44%] max-w-[250px] sm:w-[30%]"
                   initial={{ opacity: 0, y: 40, rotate: 0 }}
                   whileInView={{ opacity: 1, y: 0, rotate: [-5, 4, -3, 5][i % 4] }}
                   viewport={{ once: true, amount: 0.3 }}
