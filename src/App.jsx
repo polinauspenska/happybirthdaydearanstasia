@@ -38,7 +38,6 @@ export default function App() {
         <AnimatePresence
           mode="wait"
           custom={direction}
-          initial={false}
           onExitComplete={() => window.scrollTo({ top: 0, behavior: 'instant' })}
         >
           <SectionTransition key={index} direction={direction} label={`Chapter ${index + 1}: ${config.chapterNames[index]}`}>

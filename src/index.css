@@ -128,8 +128,20 @@ body {
   border-radius: 6px;
 }
 
+/* ── News ticker: pure CSS so it always starts on first load ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 26s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .marquee {
+    animation-duration: 90s;
   }
 }

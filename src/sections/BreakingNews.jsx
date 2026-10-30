@@ -28,10 +28,8 @@ export default function BreakingNews({ config, onNext }) {
     <div className="relative bg-paper pb-14">
       {/* ── Ticker tape ─────────────────────────────── */}
       <div className="relative z-10 mt-11 overflow-hidden border-y-[3px] border-ink bg-cherry py-1.5 text-warm">
-        <motion.div
-          className="flex w-max gap-8 whitespace-nowrap font-anton text-sm uppercase tracking-[0.2em]"
-          animate={reduce ? undefined : { x: ['0%', '-50%'] }}
-          transition={{ repeat: Infinity, ease: 'linear', duration: 26 }}
+        <div
+          className="marquee flex w-max gap-8 whitespace-nowrap font-anton text-sm uppercase tracking-[0.2em]"
           aria-hidden="true"
         >
           {Array.from({ length: 2 }).map((_, k) => (
@@ -46,7 +44,7 @@ export default function BreakingNews({ config, onNext }) {
               )}
             </span>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-8">
