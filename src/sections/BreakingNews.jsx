@@ -53,7 +53,7 @@ export default function BreakingNews({ config, onNext }) {
           <div className="flex items-center justify-between gap-2 font-sans text-[10px] uppercase tracking-[0.18em] text-ink/70 sm:text-xs">
             <span>Vol. {config.age}</span>
             <span className="hidden sm:inline">Late edition · Extremely exclusive</span>
-            <span>Price: free for the birthday girl</span>
+            <span>Price: one slice of birthday cake</span>
           </div>
           <p className="mt-1 font-serif text-[2.1rem] leading-none font-black tracking-tight sm:text-6xl">{c.masthead}</p>
         </header>
