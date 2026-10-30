@@ -93,7 +93,7 @@ VITE_SITE_URL=https://happybirthdaydearanstasia.pages.dev
 
 Commit, let it redeploy, then paste the link into WhatsApp. If an old preview is cached, add `?v=2` to the end of the link.
 
-The preview image is `public/og-image.jpg` (1200×630) and the favicon is `public/favicon.svg`.
+The preview image is `public/og-image-v2.jpg` (1200×630) and the favicon is `public/favicon.svg`.
 
 ---
 
