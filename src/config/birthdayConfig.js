@@ -221,7 +221,7 @@ export const birthdayConfig = {
   // ── CHAPTER 5 ──────────────────────────────────────────────
   finale: {
     headline: `Happy ${ordinal(age)} birthday, ${recipient}!`,
-    subheadline: 'You beautiful little menace.',
+    subheadline: 'Today is all about you.',
     letterGreeting: `Dear ${recipient},`,
     letter: [
       `${age} years of being unapologetically you. And somehow, you just keep getting better.`,
