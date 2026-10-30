@@ -14,6 +14,14 @@ export default function App() {
   const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(1)
   const [furthest, setFurthest] = useState(0)
+  // Wait for the heart preloader (in index.html) to finish so Chapter 1's opening animations are seen
+  const [ready, setReady] = useState(() => typeof window === 'undefined' || !!window.__preloaderDone || !document.getElementById('preloader'))
+  useEffect(() => {
+    if (ready) return
+    const done = () => setReady(true)
+    window.addEventListener('preloader-done', done)
+    return () => window.removeEventListener('preloader-done', done)
+  }, [ready])
 
   const goTo = useCallback(
     (next) => {
@@ -40,9 +48,11 @@ export default function App() {
           custom={direction}
           onExitComplete={() => window.scrollTo({ top: 0, behavior: 'instant' })}
         >
+          {ready && (
           <SectionTransition key={index} direction={direction} label={`Chapter ${index + 1}: ${config.chapterNames[index]}`}>
             <Chapter config={config} onNext={() => goTo(index + 1)} onRestart={() => goTo(0)} />
           </SectionTransition>
+          )}
         </AnimatePresence>
       </div>
     </MotionConfig>
